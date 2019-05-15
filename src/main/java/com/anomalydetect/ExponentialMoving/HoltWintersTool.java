@@ -42,6 +42,7 @@ public class HoltWintersTool implements DetectTool {
     /**
      * 利用二阶指数平滑对时序数据进行异常检测
      */
+    @Override
     public void timeSeriesAnalyse(double[] data) {
         results = new ArrayList<Result>();
         initial(data.length);
@@ -178,6 +179,7 @@ public class HoltWintersTool implements DetectTool {
         this.alpha = alpha;
     }
 
+    @Override
     public ArrayList<Result> getResults() {
         return results;
     }

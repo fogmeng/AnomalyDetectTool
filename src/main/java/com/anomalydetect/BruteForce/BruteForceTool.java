@@ -24,6 +24,7 @@ public class BruteForceTool implements DetectTool, MultiDetectTool {
         this.length = length;
     }
 
+    @Override
     public void timeSeriesAnalyse(double[] data) {
         results = new ArrayList<Result>();
         double bestDist = 0;
@@ -65,6 +66,7 @@ public class BruteForceTool implements DetectTool, MultiDetectTool {
         results.add(new Result(bestLoc, data[bestLoc]));
     }
 
+    @Override
     public List<Result> getResults() {
         return results;
     }

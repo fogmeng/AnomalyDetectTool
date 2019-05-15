@@ -12,11 +12,11 @@ public class DisplayTool {
     public static void showResult(DetectTool detectTool) {
 
         for (Result result : detectTool.getResults()) {
-            System.out.print(result.getIndex() + ", ");
+            System.out.print("index:"+result.getIndex() + ", ");
         }
         System.out.println();
         for (Result result : detectTool.getResults()) {
-            System.out.print(result.getValue() + ", ");
+            System.out.print("value:"+result.getValue() + ", ");
         }
     }
 }

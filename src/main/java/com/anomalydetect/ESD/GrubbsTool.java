@@ -27,6 +27,7 @@ public class GrubbsTool implements DetectTool {
         G_MAX = g;
     }
 
+    @Override
     public void timeSeriesAnalyse(double[] data) {
         results = new ArrayList<Result>();
         average = MathTool.getAverageFromArray(data);
@@ -41,6 +42,7 @@ public class GrubbsTool implements DetectTool {
         }
     }
 
+    @Override
     public ArrayList<Result> getResults() {
         return this.results;
     }

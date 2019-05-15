@@ -24,6 +24,7 @@ public class SESDTool implements DetectTool {
         esdTool = new ESDTool(1);
     }
 
+    @Override
     public void timeSeriesAnalyse(double[] data) {
         esdTool.timeSeriesAnalyse(data);
         results = esdTool.getResults();
@@ -37,6 +38,7 @@ public class SESDTool implements DetectTool {
         this.t = t;
     }
 
+    @Override
     public ArrayList<Result> getResults() {
         return results;
     }

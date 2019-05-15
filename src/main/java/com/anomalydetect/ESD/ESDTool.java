@@ -26,6 +26,7 @@ public class ESDTool implements DetectTool {
         this.g = new double[k];
     }
 
+    @Override
     public void timeSeriesAnalyse(double[] data) {
 
         initG(data);
@@ -112,6 +113,7 @@ public class ESDTool implements DetectTool {
         this.t = t;
     }
 
+    @Override
     public ArrayList<Result> getResults() {
         return results;
     }
